@@ -2,57 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Bill O'Toole: The Website</title>
+  <meta name="description" content="The Best Writer and Communicator in America">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-image: url("https://loc.getarchive.net/media/light-rural-electrification-administration-beall-a833c3");
+      background-image: url("roof.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: cover;
       font-family: Arial, sans-serif;
-      color: #333;
-      text-shadow: 2px 2px 4px #003366;
+      margin: 0;
+      padding: 0;
     }
     header {
-      color: #fff;
+      /* Removed background color */
+      color: white;
       padding: 20px 0;
       text-align: center;
     }
-    .intro, section, .contact {
-      background-color: rgba(0, 0, 0, 0.7);
+    .intro {
+      max-width: 600px;
+      margin: 0 auto;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.5); /* Retained dark background for intro */
     }
     .intro h1 {
       font-size: 36px;
       margin-bottom: 10px;
-      font-weight: bold;
     }
-    .intro p, section p, .contact p {
+    .intro p {
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 20px;
     }
-    section h2, .contact h2 {
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
       font-size: 24px;
       margin-bottom: 20px;
-      text-align: center;
+      color: #333;
     }
-    section ul, .contact ul {
+    section ul {
       list-style: none;
       padding: 0;
     }
-    section ul li, .contact ul li {
+    section ul li {
       font-size: 16px;
       line-height: 1.6;
+      color: #555;
       margin-bottom: 10px;
     }
+    .contact p {
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
     .contact a {
-      color: #ffd700;
+      color: #007bff;
       text-decoration: none;
-      font-weight: bold;
     }
     .contact a:hover {
       text-decoration: underline;
