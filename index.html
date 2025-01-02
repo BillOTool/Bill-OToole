@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Bill O'Toole: The Website</title>
-  <meta name="description" content="A Skilled Communications Professional">
+  <meta name="description" content="The Best Writer and Communicator in America">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <style>
@@ -18,6 +18,7 @@
       padding: 0;
     }
     header {
+      /* Removed background color */
       color: white;
       padding: 20px 0;
       text-align: center;
@@ -27,166 +28,102 @@
       margin: 0 auto;
       padding: 20px;
       border-radius: 10px;
-      text-shadow: 2px 2px 4px #000000;
+      text-shadow: 2px 2px 4px #000000; /* Added black shadow */
     }
     .intro h1 {
-      font-size: 80px;
+      font-size: 80px; /* Increased font size */
       margin-bottom: 10px;
-      text-shadow: 2px 2px 4px #000000;
+      text-shadow: 2px 2px 4px #000000; /* Added black shadow */
     }
     .intro p {
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 4px #000000;
+      text-shadow: 2px 2px 4px #000000; /* Added black shadow */
     }
-    .tabs {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    .intro h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000000; /* Added black shadow */
     }
-    .tabs button {
-      background-color: transparent;
-      border: none;
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0 10px;
-      padding: 10px;
-      cursor: pointer;
-      color: #333;
-      text-transform: uppercase;
-    }
-    .tabs button.active {
-      border-bottom: 2px solid #000;
-    }
-    .content {
-      display: none;
+    section {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 40px auto;
       padding: 20px;
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
-    .content.active {
-      display: block;
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
     }
-    .portfolio-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+    section ul {
+      list-style: none;
+      padding: 0;
     }
-    .portfolio-gallery img, .portfolio-gallery video {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    section ul li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 10px;
     }
-    .subheading {
+    .contact p {
+      font-size: 18px;
+      color: #333;
       text-align: center;
-      font-size: 20px;
-      margin-top: 20px;
-      font-style: italic;
+    }
+    .contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
-  <script>
-    function openTab(event, tabName) {
-      const tabs = document.querySelectorAll('.content');
-      tabs.forEach(tab => tab.classList.remove('active'));
-
-      const buttons = document.querySelectorAll('.tabs button');
-      buttons.forEach(button => button.classList.remove('active'));
-
-      document.getElementById(tabName).classList.add('active');
-      event.currentTarget.classList.add('active');
-    }
-  </script>
 </head>
 <body>
   <header>
-    <h1 style="font-size: 80px; text-shadow: 2px 2px 4px #000000;">Bill O'Toole</h1>
+    <h1 style="font-size: 80px; text-shadow: 2px 2px 4px #000000;">Bill O'Toole</h1> <!-- Added inline style for font size and text shadow -->
     <div class="intro">
-      <h2>A Skilled and Versatile Communications Professional</h2>
-      <p>Explore my work and expertise below.</p>
+      <h2>I'm a media and political professional with over a decade of experience.</h2>
+      <p>Check out my work and get in touch below.</p>
     </div>
   </header>
-  <div class="tabs">
-    <button class="active" onclick="openTab(event, 'experience')">Experience</button>
-    <button onclick="openTab(event, 'skills')">Skills</button>
-    <button onclick="openTab(event, 'contact')">Contact</button>
-    <button onclick="openTab(event, 'portfolio')">Portfolio</button>
-  </div>
-  <div id="experience" class="content active">
+  <section class="experience">
     <h2>Experience</h2>
     <ul>
-      <li>Digital Communications Strategist for the North Carolina Democratic Party (2024).</li>
-      <li>AI Content Editor at Outlier AI, specializing in generative AI and RLHF (2024 - Present).</li>
-      <li>Constituent Services Representative for the U.S. House of Representatives (2023-2024).</li>
-      <li>Freelance Reporter and Editor for various outlets, including PublicSource and Patch.com (2021-2022).</li>
+      <li>2024 General Election: Digital Communications Specialist for the North Carolina Democratic Party
+      <li>2022 Primary and General Election: Communications Deputy & Field Organizer for Democrat Chris Deluzio's successful campaign in Pennsylvania's 17th Congressional District.</li>
+      <li>Reporter and Editor for various news outlets in the Pittsburgh region.</li>
+      <li>Reporter and Editor for 'The Myanmar Times' newspaper bureaus in Yangon and Mandalay, Burma.</li>
     </ul>
-  </div>
-  <div id="skills" class="content">
-    <h2>Skills</h2>
+  </section>
+  <section class="writing-samples">
+    <h2>Writing Samples</h2>
     <ul>
-      <li>Writing, Editing, and Journalism</li>
-      <li>Digital Communications and Social Media Strategy</li>
-      <li>Fundraising Email Campaigns</li>
-      <li>Adobe Creative Cloud, Canva, WordPress CMS</li>
-      <li>Photography and Videography</li>
-      <li>Generative AI Concepts and Evaluation</li>
+      <li><a href="https://www.publicsource.org/deep-dive-into-city-departments-reveals-challenges-for-gainey-administration/">-Report Highlights Challenges For Gainey Administration</a><br><i>Public Source - January, 2022</i></li>
+      <li><a href="https://pittsburghquarterly.com/articles/breaking-the-news/">-Pandemic Pushes Ailing Local News Outlets To The Brink</a><br><i>Pittsburgh Today - April, 2021</i></li>
+      <li><a href="https://nextpittsburgh.com/current-features/pittsburgh-leaders-and-richard-florida-react-to-amazon-hq2-decision/">-Pittsburgh Reacts To Amazon HQ2 Decision</a><br><i>NEXTpittsburgh - November, 2018</i></li>
+      <li><a href="https://pittsburghquarterly.com/author/bill_otoole/">And Many More...</a></li>
     </ul>
-  </div>
-  <div id="contact" class="content">
+  </section>
+  <section class="skills">
+    <h2>Skills</h2>
+    <p>-Writing, Research, Copy Editing, Media Relations, Photography, Videography, Adobe Creative Cloud, Wordpress CMS, Google Office Suite, CSS Coding (including this website), Social Media Management, Community Organizing.</p>
+  </section>
+  <section class="awards">
+    <h2>Awards and Accolades</h2>
+    <ul>
+      <li>BA in English Writing and Film Studies from The University of Pittsburgh.</li>
+      <li>Winner of multiple Golden Quill Awards for Excellence in Written Journalism.</li>
+    </ul>
+  </section>
+  <section class="contact">
     <h2>Contact</h2>
-    <p>Phone: <a href="tel:4125001406">412-500-1406</a></p>
-    <p>Email: <a href="mailto:botoole12@gmail.com">botoole12@gmail.com</a>, <a href="mailto:billotoole@protonmail.com">billotoole@protonmail.com</a></p>
-  </div>
-  <div id="portfolio" class="content">
-    <h2>Portfolio</h2>
-    <div class="portfolio-gallery">
-      <img src="flood_damage.gif" alt="Flood Damage Report">
-      <video controls>
-        <source src="Climate change vertical vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="Kamala Trump sales tax tweet.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <h3 class="subheading">Made with Dall-E</h3>
-    <div class="portfolio-gallery">
-      <img src="The Harris-Walz Administration ice cream.mp4" alt="The Harris-Walz Administration Ice Cream">
-      <img src="Moon vacation.mp4" alt="Moon Vacation">
-      <img src="solar punk market.mp4" alt="Solar Punk Market">
-    </div>
-    <h3 class="subheading">Made with Opus Clip</h3>
-    <div class="portfolio-gallery">
-      <video controls>
-        <source src="Mobilize for Change_ Flipping North Carolina Blue in November (1).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="The Route to the White House_ North Carolina_s Fight.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="Join Us in Making a Difference Together.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="Unleash Your Power_ Make a Difference Today.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="The Devastating Impact of Trump_s 2025 Agenda on Families.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
+    <p><a href="mailto:botoole12@gmail.com">Gmail</a></p>
+    <p><a href="mailto:billotoole@protonmail.com">Protonmail</a></p>
+  </section>
 </body>
 </html>
-
