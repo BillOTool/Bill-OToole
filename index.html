@@ -736,7 +736,7 @@
       shown = 0;
       grid.innerHTML = '';
       renderBatch();
-      countEl.textContent = filtered.length + ' article' + (filtered.length !== 1 ? 's' : '');
+      if (countEl) countEl.textContent = filtered.length + ' article' + (filtered.length !== 1 ? 's' : '');
       noResults.style.display = filtered.length === 0 ? 'block' : 'none';
     }
 
